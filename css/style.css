@@ -245,8 +245,8 @@
   /* sticky only for column 1 and 3 */
   .sticky-wrapper {
     position: sticky;
-    top:100px; /* adjust if you have a header */
-    display:flex;
+    top:30%; /* adjust if you have a header */
+    /* display:flex; */
     flex-direction:column;
     gap:20px;
   }
@@ -259,9 +259,11 @@
   }
   .image-box img {
     width:100%;
-    height:300px;
+    height:300px !important;
     object-fit:cover;
     display:block;
+    min-width: 300px;
+    max-width: 300px;
   }
 
   @media (max-width:1024px){
@@ -357,8 +359,6 @@
     min-width: 300px;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
   }
